@@ -4,36 +4,36 @@
         "title": "Model S",
         "description": "Order Online for Touchless Delivery",
         "image": "model-s.jpg",
-        "range": "390",
-        "time": "1.99",
-        "topSpeed": "200",
-        "peakPower": "1,020"
+        "range": "637 km",
+        "time": "2,1s",
+        "topSpeed": "322 km/h",
+        "peakPower": "1,020 ch"
     },
     {
         "id": 1,
         "title": "Model 3",
         "description": "Order Online for Touchless Delivery",
-        "image": "model-3.jpg",
-        "range": "400",
-        "time": "2.99",
-        "topSpeed": "180",
-        "peakPower": "900"
+        "image": "model-3-page.jpeg",
+        "range": "614 km",
+        "time": "2.99s",
+        "topSpeed": "300 km/h",
+        "peakPower": "900 ch"
     },
     {
         "id": 2,
         "title": "Model X",
         "description": "Order Online for Touchless Delivery",
-        "image": "model-x.jpg",
-        "range": "350",
-        "time": "1.55",
-        "topSpeed": "150",
-        "peakPower": "1,130"
+        "image": "model-x-page.jpeg",
+        "range": "547 km",
+        "time": "2,6s",
+        "topSpeed": "310 km/h",
+        "peakPower": "1020 ch"
     },
     {
         "id": 3,
         "title": "Model Y",
         "description": "Order Online for Touchless Delivery",
-        "image": "model-y.jpg",
+        "image": "model-y-page.jpg",
         "range": "410",
         "time": "2.05",
         "topSpeed": "190",

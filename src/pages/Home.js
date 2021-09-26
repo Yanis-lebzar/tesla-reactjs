@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Section from "./Section";
+import Section from "../components/Section";
 function Home() {
   return (
     <div>
@@ -18,7 +18,7 @@ function Home() {
           backgroundImg='model-y.jpg'
           leftBtnText='Custom order'
           rightBtnText='Existing Inventory'
-        />{" "}
+        />
         <Section
           title='Model 3'
           description='Order Online for Touchless Delivery'
@@ -61,4 +61,6 @@ export default Home;
 
 const Container = styled.div`
   height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 `;

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 function Section({
   title,
@@ -10,15 +11,21 @@ function Section({
 }) {
   return (
     <Wrap bgImage={backgroundImg}>
-      <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </ItemText>
+      <Fade bottom>
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
+      </Fade>
+
       <Buttons>
         <ButtonGroup>
-          <LeftButton>{leftBtnText}</LeftButton>
-
-          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+          <Fade left>
+            <LeftButton>{leftBtnText}</LeftButton>
+          </Fade>
+          <Fade right>
+            {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+          </Fade>
         </ButtonGroup>
 
         <DownArrow src='/images/down-arrow.svg' />
@@ -41,6 +48,7 @@ const Wrap = styled.div`
   justify-content: space-between;
   align-items: center;
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  scroll-snap-align: start;
 `;
 
 const ItemText = styled.div`
